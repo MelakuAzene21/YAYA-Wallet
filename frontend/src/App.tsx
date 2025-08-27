@@ -1,11 +1,9 @@
 import type React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import Profile from './pages/Profile'
 import Layout from './components/layout/Layout'
 import Transfer from './pages/Transfer'
 import History from './pages/History'
-import Settings from './pages/Settings'
 
 
 const App: React.FC = () => {
@@ -15,10 +13,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/history" element={<History />} />
-          <Route path="/settings" element={<Settings />} />
           <Route
             path="*"
             element={
