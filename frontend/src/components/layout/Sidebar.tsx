@@ -6,9 +6,7 @@ import { NavLink } from 'react-router-dom'
 import {
   FaHome,
   FaExchangeAlt,
-  FaHistory,
-  FaUser,
-  FaCog,
+  FaHistory,  
   FaWallet,
   FaBars,
   FaTimes,
@@ -21,8 +19,7 @@ const Sidebar: React.FC = () => {
     { path: '/dashboard', icon: FaHome, label: 'Dashboard' },
     { path: '/transfer', icon: FaExchangeAlt, label: 'Transfer' },
     { path: '/history', icon: FaHistory, label: 'History' },
-    { path: '/profile', icon: FaUser, label: 'Profile' },
-    { path: '/settings', icon: FaCog, label: 'Settings' },
+ 
   ]
 
   return (
@@ -86,15 +83,6 @@ const Sidebar: React.FC = () => {
           ))}
         </nav>
 
-        <div className="absolute bottom-4 left-4 right-4">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-4 text-white">
-            <h3 className="font-semibold text-sm">Need Help?</h3>
-            <p className="text-xs opacity-90 mt-1">Contact our support team</p>
-            <button className="mt-2 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors">
-              Get Support
-            </button>
-          </div>
-        </div>
       </aside>
     </>
   )
